@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tn.esprit.familylinks.RegisterActivity2">
+    <LinearLayout
+        android:id="@+id/register_formp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Add Father"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:id="@+id/textView10" />
+
+
+        <EditText
+            android:id="@+id/FirstNameFather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="FirstName"
+            android:imeActionId="@+id/login"
+            android:imeOptions="actionUnspecified"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <EditText android:id="@+id/JobFather" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Father's Job"
+            android:imeActionId="@+id/login"
+            android:imeOptions="actionUnspecified"
+            android:inputType="text"
+            android:maxLines="1" android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="clip_horizontal|center|clip_vertical">
+            <TextView
+                android:id="@+id/dobf"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/sate_selected"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="center_vertical" />
+            <Button
+                android:id="@+id/setDate"
+                android:layout_width="34dp"
+                android:layout_height="30dp"
+                android:onClick="setDate"
+                android:ellipsize="start"
+                android:drawableBottom="@drawable/ic_action_go_to_today"
+                android:background="#ffffff"
+                android:layout_marginLeft="12dp"
+                android:gravity="top|center_horizontal"
+                android:foregroundGravity="center_vertical|fill_vertical|center_horizontal"
+                android:clickable="true" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="clip_horizontal|center|clip_vertical">
+            <Button
+                android:id="@+id/btn_choose_imageF"
+                android:text="Choose picture"
+                android:textColor="#0022FF"
+                android:textSize="15sp"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:id="@+id/img_showf"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/addfath"
+            android:text="Add"
+            android:textColor="@color/black_semi_transparent"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonsign"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
